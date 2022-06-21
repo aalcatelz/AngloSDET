@@ -27,7 +27,7 @@ namespace AngloSDET.TestAutomation.API.Steps
             _context.SaveValue("request", new HttpRequestWrapper().SetResourse(ResourcesApi.EndPoints[resource]));
         }
 
-        [When(@"user adds car type - (.*)")]
+        [When(@"user adds car type - (.*) as UrlSegment")]
         public void WhenUserAddsCarType(string type)
         {
             var request = _context.Get<HttpRequestWrapper>("request");

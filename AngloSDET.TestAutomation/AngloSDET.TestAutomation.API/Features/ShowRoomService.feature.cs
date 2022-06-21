@@ -99,7 +99,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("request to the resource - Cars", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
- testRunner.When(string.Format("user adds car type - {0}", type), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("user adds car type - {0} as UrlSegment", type), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
  testRunner.And("execute GET request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -135,7 +135,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("request to the resource - Cars", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 18
- testRunner.When("user adds car type - Tractor", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("user adds car type - Tractor as UrlSegment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 19
  testRunner.And("execute GET request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
