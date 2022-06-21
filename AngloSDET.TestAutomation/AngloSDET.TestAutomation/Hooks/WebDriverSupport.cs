@@ -1,4 +1,4 @@
-﻿using AngloSDET.TestAutomation.UI.Infrastructure;
+﻿using AngloSDET.TestAutomation.Core.Infrastructure;
 using AngloSDET.TestAutomation.UI.Interfaces;
 using AngloSDET.TestAutomation.UI.Pages;
 using BoDi;
@@ -24,7 +24,7 @@ namespace AngloSDET.TestAutomation.UI.Hooks
         {
             webDriver = new ChromeDriver(CreateChromeOptions)
             {
-                Url = ConfigurationReader.BaseUrl
+                Url = ConfigurationReader.Url
             };
             webDriver.Manage().Timeouts().ImplicitWait = ConfigurationReader.ImplicitWaitSec;
             _objectContainer.RegisterInstanceAs(webDriver);
